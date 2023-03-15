@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOP.API", "OFOP.API\OFOP.API.csproj", "{AADEF0EF-8CD8-4532-A0FE-4F274D3377BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOP.Entity", "OFOP.Entity\OFOP.Entity.csproj", "{8AF55772-D938-433A-B5E7-01C221C4505B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOP.Core", "OFOP.Core\OFOP.Core.csproj", "{E6AA08DD-D92F-4C1F-9E2D-1E27E918D5A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFOP.Infrastructure", "OFOP.Infrastructure\OFOP.Infrastructure.csproj", "{9C760225-EC11-4680-AE4A-23B90F8DECB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AADEF0EF-8CD8-4532-A0FE-4F274D3377BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADEF0EF-8CD8-4532-A0FE-4F274D3377BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADEF0EF-8CD8-4532-A0FE-4F274D3377BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADEF0EF-8CD8-4532-A0FE-4F274D3377BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF55772-D938-433A-B5E7-01C221C4505B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF55772-D938-433A-B5E7-01C221C4505B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF55772-D938-433A-B5E7-01C221C4505B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF55772-D938-433A-B5E7-01C221C4505B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6AA08DD-D92F-4C1F-9E2D-1E27E918D5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6AA08DD-D92F-4C1F-9E2D-1E27E918D5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6AA08DD-D92F-4C1F-9E2D-1E27E918D5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6AA08DD-D92F-4C1F-9E2D-1E27E918D5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C760225-EC11-4680-AE4A-23B90F8DECB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C760225-EC11-4680-AE4A-23B90F8DECB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C760225-EC11-4680-AE4A-23B90F8DECB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C760225-EC11-4680-AE4A-23B90F8DECB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3038746-EAD9-4A77-8A1A-CD2C9009C1FA}
+	EndGlobalSection
+EndGlobal
