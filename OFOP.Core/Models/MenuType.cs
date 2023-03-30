@@ -3,18 +3,18 @@
 using System;
 using System.Collections.Generic;
 
-namespace OFOP.Entity.Models
+namespace OFOP.Core.Models
 {
     public partial class MenuType
     {
         public MenuType()
         {
-            Menu = new HashSet<Menu>();
+            Menus = new HashSet<Menu>();
         }
 
         public int MenuTypeId { get; set; }
         public string TypeName { get; set; }
 
-        public virtual ICollection<Menu> Menu { get; set; }
+        public virtual ICollection<Menu> Menus { get; set; }
     }
 }

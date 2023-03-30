@@ -3,18 +3,18 @@
 using System;
 using System.Collections.Generic;
 
-namespace OFOP.Entity.Models
+namespace OFOP.Core.Models
 {
     public partial class UserType
     {
         public UserType()
         {
-            User = new HashSet<User>();
+            Users = new HashSet<User>();
         }
 
         public int UtypeId { get; set; }
         public string UtName { get; set; }
 
-        public virtual ICollection<User> User { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

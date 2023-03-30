@@ -2,9 +2,8 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OFOP.Entity.Models
+namespace OFOP.Core.Models
 {
     public partial class Order
     {

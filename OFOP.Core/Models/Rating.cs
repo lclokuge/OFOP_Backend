@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OFOP.Entity.Models
+namespace OFOP.Core.Models
 {
     public partial class Rating
     {

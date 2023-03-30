@@ -12,7 +12,7 @@ namespace OFOP.Infrastructure
         void Add(T entity);
         //void Add(IList<T> entities);
         //void Add(IEnumerable<T> entities);
-        //void Update(T entity);
+          void Update(T entity);
         //void Update(IList<T> entities);
         //void Update(IEnumerable<T> entities);
         //void AddOrUpdate(Expression<Func<T, object>> exp, T entity);

@@ -91,6 +91,19 @@ namespace OFOP.Infrastructure
             return  dbSet.Where(where);
         }
 
-      
+        public void Update(T entity)
+        {
+            try
+            {
+                _entities.Entry(entity).State = EntityState.Modified;
+                _entities.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Trace.TraceInformation("Source: {0} Error: {1}", ex.Source,
+                                               ex.Message);
+                throw ex;
+            }
+        }
     }
 }

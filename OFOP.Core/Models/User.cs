@@ -3,15 +3,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace OFOP.Entity.Models
+namespace OFOP.Core.Models
 {
     public partial class User
     {
         public User()
         {
-            Menu = new HashSet<Menu>();
-            Order = new HashSet<Order>();
-            Rating = new HashSet<Rating>();
+            Menus = new HashSet<Menu>();
+            Orders = new HashSet<Order>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int CustId { get; set; }
@@ -26,8 +26,8 @@ namespace OFOP.Entity.Models
         public DateTime? CreatedDate { get; set; }
 
         public virtual UserType UserTypeNavigation { get; set; }
-        public virtual ICollection<Menu> Menu { get; set; }
-        public virtual ICollection<Order> Order { get; set; }
-        public virtual ICollection<Rating> Rating { get; set; }
+        public virtual ICollection<Menu> Menus { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }

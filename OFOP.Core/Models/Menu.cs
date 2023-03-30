@@ -3,14 +3,14 @@
 using System;
 using System.Collections.Generic;
 
-namespace OFOP.Entity.Models
+namespace OFOP.Core.Models
 {
     public partial class Menu
     {
         public Menu()
         {
-            Order = new HashSet<Order>();
-            Rating = new HashSet<Rating>();
+            Orders = new HashSet<Order>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int MenuId { get; set; }
@@ -25,7 +25,7 @@ namespace OFOP.Entity.Models
 
         public virtual User CookNavigation { get; set; }
         public virtual MenuType MenuType { get; set; }
-        public virtual ICollection<Order> Order { get; set; }
-        public virtual ICollection<Rating> Rating { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }

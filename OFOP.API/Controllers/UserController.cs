@@ -34,12 +34,16 @@ namespace OFOP.API.Controllers
         {
             try
             {
-                var loginuser =  _userRepo.GetMany(x => x.CustUsername == user.Username && x.CustPassword== user.Password).FirstOrDefault();
+                var loginuser =  _userRepo.GetMany(x => x.CustEmail == user.Username && x.CustPassword== user.Password).FirstOrDefault();
                 
                 if (loginuser != null)
                 {
                     //var token = this.GenerateToken(user.username);
-                    return new UserViewModel { UserType = loginuser.UserType,  CustName = loginuser.CustName, CustPostCode=loginuser.CustPostCode, CustId=loginuser.CustId };
+                    return new UserViewModel 
+                    { UserType = loginuser.UserType,  CustName = loginuser.CustName, 
+                        CustPostCode=loginuser.CustPostCode, CustId=loginuser.CustId,
+                      CustTelNumber=loginuser.CustTelNumber, CustAddress =loginuser.CustAddress,
+                        CustEmail= loginuser.CustEmail };
                 }
                 else
                 {
