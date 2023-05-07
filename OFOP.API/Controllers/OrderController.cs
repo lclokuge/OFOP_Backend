@@ -95,5 +95,23 @@ namespace OFOP.API.Controllers
                 throw e;
             }
         }
+
+        [Route("getAllOrders")]
+        [HttpPost]
+        public IEnumerable<Order> getAllOrders()
+        {
+            try
+            {
+                return _orderRepo.GetAll().ToList();
+
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        }
     }
+
+    
 }
